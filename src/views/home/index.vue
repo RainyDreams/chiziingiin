@@ -1,28 +1,34 @@
 <template>
   <div class="bg-slate-50 h-full min-h-screen w-full overflow-x-hidden">
     <div class="max-w-3xl m-auto h-full px-4">
-      <div class="pt-20 md:pt-32 lg:pt-40 xl:pt-48 mb-12 ">
-        <h2 class="text-center w-full text-2xl/relaxed animate__animated md:text-3xl/relaxed text-slate-800 lg:text-4xl font-bold animate__fadeInDown">
-          这里是赤子英金！<br class="md:hidden"/>
-          欢迎和零本 AI 对话
-        </h2>
-      </div>
-      <div class="animate__animated animate__fadeIn " style="--animate-delay:2s">
-        <form class="w-full flex rounded-3xl border items-end bg-white border-slate-200 shadow-lg focus-within:shadow-xl focus-within:shadow-slate-200 transition-all focus-within:border-slate-300 shadow-slate-100 " action="https://lingben.top/" method="get">
-          <textarea style="resize: none;" class="flex-1 min-h-28 w-full rounded-3xl border-none outline-none px-5 py-5 font-normal " autofocus placeholder="你好👋" type="text" name="q" maxlength="800"></textarea>
-          <button class="bg-slate-100 mr-3 mb-3 text-slate-500 hover:text-slate-600 px-2 py-2 rounded-3xl font-bold" type="submit">
-            <svg width="18" height="18" viewBox="0 0 48 48" fill="none"><path d="M13 30L25 18L37 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel"></path></svg>
-          </button>
-        </form>
-      </div>
-      <div class="mt-20 md:mt-32 lg:mt-40 xl:mt-48">
-        <div class="flex justify-center">
-          <div class="relative">
-            <div class="flex justify-center">
-              <div class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg shadow-slate-200 rounded-full flex items-center justify-center">
-                <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
+      <div class="min-h-screen pb-10 relative flex flex-col">
+        <div class="pt-20 md:pt-28 lg:pt-32 mb-12 ">
+          <h2 class="text-center w-full text-slate-800  font-bold">
+            <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed">这里是赤子英金</p>
+            <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed animate__delay-2s" style="--animate-delay:.4s">欢迎与零本 AI 对话</p>
+          </h2>
+        </div>
+        <div class="animate__animated animate__fadeIn flex-1 animate__delay-2s" style="--animate-delay:.5s">
+          <form class="w-full flex rounded-3xl  px-5 py-5  border items-end bg-white border-slate-200 shadow-lg focus-within:shadow-xl focus-within:shadow-slate-200 transition-all focus-within:border-slate-300 shadow-slate-100 " action="https://lingben.top/" method="get">
+            <textarea style="resize: none;" class="flex-1 text-base/6 min-h-20 w-full border-none outline-none font-normal " 
+            autofocus placeholder="你好👋" type="text" name="q" maxlength="800"
+            @keydown.enter="handleEnter"
+            autocomplete="off"
+            ></textarea>
+            <button class="bg-slate-100 text-slate-500 hover:text-slate-600 px-2 py-2 rounded-3xl font-bold" type="submit">
+              <svg width="18" height="18" viewBox="0 0 48 48" fill="none"><path d="M13 30L25 18L37 30" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel"></path></svg>
+            </button>
+          </form>
+        </div>
+        <div class="mt-20 md:mt-32 lg:mt-40 xl:mt-48">
+          <div class="flex justify-center">
+            <div class="relative">
+              <div class="flex justify-center">
+                <div class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-900/5 shadow-lg shadow-slate-200 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -31,32 +37,32 @@
       <div class="mt-12 md:mt-20">
         <h3 class="text-center text-xl font-bold md:text-2xl text-slate-800">我们的项目</h3>
         <div class="mt-8 grid gap-6 md:grid-cols-2">
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 transition-transform hover:scale-105">
+          <a href="https://lingben.top/home" class="block rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold">零本智协</h4>
             <p class="text-gray-500 text-base/relaxed">
               LinkBrain AI。依托领先的多模型深度思考 AI 技术驱动力量，构建全面创新的市场项目解决方案体系，致力于让「零成本构建创新高效应用程序」成为现实。
             </p>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 transition-transform hover:scale-105">
+          </a>
+          <a href="https://oh.chiziingiin.top/project/Scheduler/" class="block rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold">进程领航</h4>
             <p class="text-gray-500 text-base/relaxed">
               记录进度目标计数和专注的网页应用程序。我的目标是让用户享受方便快捷高效美观的日程效率软件体验。
             </p>
-          </div>
+          </a>
         </div>
 
         <h3 class="text-center text-xl font-bold md:text-2xl text-slate-800 mt-12 md:mt-20">我们的理念</h3>
         <div class="mt-8 grid gap-6 md:grid-cols-2">
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
+          <div class="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold text-center">开放</h4>
           </div>
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
+          <div class="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold text-center">自由</h4>
           </div>
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
+          <div class="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold text-center">平等</h4>
           </div>
-          <div class="rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
+          <div class="rounded-2xl bg-white p-6 shadow-sm shadow-slate-200 duration-500 h-32 flex flex-col items-center justify-center transition-transform hover:scale-105">
             <h4 class="mb-2 text-lg md:text-xl lg:text-2xl text-slate-800 font-semibold text-center">创新</h4>
           </div>
         </div>
@@ -72,6 +78,22 @@
   </div>
 </template>
 
+<script setup>
+function isMobile() {
+  const userAgent = navigator.userAgent;
+  const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return mobileRegex.test(userAgent);
+}
+const mobile = isMobile();
+const handleEnter = (event) => {
+  if (event.shiftKey || mobile) {
+    return;
+  } else if (event.key === 'Enter') {
+    event.preventDefault();
+    document.querySelector('form').submit();
+  }
+}
+</script>
 
 <style scoped>
 
