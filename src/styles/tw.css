@@ -6,3 +6,7 @@
   width: 4px;
   height: 0
 }
+
+.serif-text {
+  font-family: "Noto Serif SC", Crimson Pro, "ui-serif", Georgia, Cambria, Times New Roman, Times, serif;
+}

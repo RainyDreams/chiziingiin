@@ -1,14 +1,18 @@
 <template>
-  <div class="bg-slate-50 h-full min-h-screen w-full overflow-x-hidden">
-    <div class="max-w-3xl m-auto h-full px-4">
+  <div class="bg-slate-50 h-full min-h-svh w-full overflow-x-hidden">
+    <div class="max-w-4xl m-auto h-full px-4">
       <div class="min-h-screen pb-10 relative flex flex-col">
-        <div class="pt-20 md:pt-28 lg:pt-32 mb-12 ">
-          <h2 class="text-center w-full text-slate-800  font-bold">
-            <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed">这里是赤子英金</p>
-            <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed animate__delay-2s" style="--animate-delay:.4s">欢迎与零本 AI 对话</p>
+        <div class="pt-16 md:pt-20 mb-12 ">
+          <h2 class="text-center w-full text-slate-800">
+            <h1 class="animate__animated animate__fadeInDown text-5xl font-bold text-center md:text-6xl/snug lg:text-7xl/snug serif-text text-black">零本智协</h1>
+            <p style="--animate-delay:.4s" class="animate__animated animate__fadeInDown animate__delay-2s text-lg/relaxed md:text-xl/relaxed lg:text-2xl/relaxed text-slate-600 mt-4 md:mt-6 text-center serif-text">零本智协是赤峰二中2023级12班研究性学习团队近20开发的 AI 软件</p>
+            <h5 style="--animate-delay:.4s" class="animate__animated animate__fadeInDown animate__delay-2s text-lg/relaxed md:text-xl/relaxed lg:text-2xl/relaxed text-slate-600 mt-2 max-w-[880px] mx-auto text-center serif-text mb-10 md:mb-16 lg:mb-20">依托领先的多模型深度思考 AI 技术驱动力量，构建全面创新的市场项目解决方案体系，致力于让<span class="primary-text">「零成本构建创新高效应用程序」</span>成为现实。</h5>
+            <a  href="https://lingben.top" class="bg-black text-white rounded-full h-14 mx-auto max-w-52 text-center flex items-center justify-center text-lg font-semibold hover:text-gray-200 transition"><span >立即使用</span></a>
+            <!-- <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed">这里是赤子英金</p>
+            <p class="animate__animated animate__fadeInDown text-2xl/relaxed md:text-3xl/relaxed lg:text-4xl/relaxed animate__delay-2s" style="--animate-delay:.4s">欢迎与<span class="serif-text font-bold"> 零本智协 </span>对话</p> -->
           </h2>
         </div>
-        <div class="animate__animated animate__fadeIn flex-1 animate__delay-2s" style="--animate-delay:.5s">
+        <div class="animate__animated animate__fadeIn flex-1 animate__delay-2s max-w-3xl w-full mx-auto" style="--animate-delay:.5s">
           <form class="w-full flex rounded-3xl  px-5 py-5  border items-end bg-white border-slate-200 shadow-lg focus-within:shadow-xl focus-within:shadow-slate-200 transition-all focus-within:border-slate-300 shadow-slate-100 " action="https://lingben.top/" method="get">
             <textarea style="resize: none;" class="flex-1 text-base/6 min-h-20 w-full border-none outline-none font-normal " 
             autofocus placeholder="你好👋" type="text" name="q" maxlength="800"
@@ -34,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 md:mt-20">
+      <div class="mt-12 md:mt-20 serif-text">
         <h3 class="text-center text-xl font-bold md:text-2xl text-slate-800">我们的项目</h3>
         <div class="mt-8 grid gap-6 md:grid-cols-2">
           <a href="https://lingben.top/home" class="block rounded-2xl bg-white p-6 shadow-lg shadow-slate-200 duration-500 transition-transform hover:scale-105">
